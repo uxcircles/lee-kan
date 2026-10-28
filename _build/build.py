@@ -493,17 +493,17 @@ def fees():
     hof = L("Home Office fee", "內政部申請費")
     ihs = L("Immigration Health Surcharge £1,035 per year", "移民健康附加費每年 £1,035")
     imm = [
-        (L("Family visa (spouse / child), entry clearance", "家庭簽證（配偶／子女），入境申請"), "£2,000 – £2,200", f"{hof} £1,846<br>{ihs}"),
-        (L("Family visa (spouse / child), extension", "家庭簽證（配偶／子女），續簽"), "£1,800 – £2,000", f"{hof} £1,846<br>{ihs}"),
-        (L("Graduate and High Potential Individual visas", "畢業生簽證及高潛力人才簽證"), "£1,000", f"{hof} £822<br>{ihs}"),
-        (L("10-year long residence ILR (settlement)", "十年長期居留永久居留（ILR）"), "£1,900 – £2,100", f"{hof} £2,885"),
-        (L("Other Indefinite Leave to Remain (settlement)", "其他永久居留（ILR）"), "£1,800 – £2,000", f"{hof} £2,885"),
-        (L("Naturalisation as a British citizen", "入籍英國"), "£1,200", f"{hof} £1,500"),
+        (L("Family visa (spouse / child), entry clearance", "家庭簽證（配偶／子女），入境申請"), "£2,000 – £2,200", f"{hof} £2,064<br>{ihs}"),
+        (L("Family visa (spouse / child), extension", "家庭簽證（配偶／子女），續簽"), "£1,800 – £2,000", f"{hof} £1,407<br>{ihs}"),
+        (L("Graduate and High Potential Individual visas", "畢業生簽證及高潛力人才簽證"), "£1,000", f"{hof} {L('£937 (Graduate) / £880 (HPI)', '£937（畢業生）／£880（高潛力人才）')}<br>{ihs}"),
+        (L("10-year long residence ILR (settlement)", "十年長期居留永久居留（ILR）"), "£1,900 – £2,100", f"{hof} £3,226"),
+        (L("Other Indefinite Leave to Remain (settlement)", "其他永久居留（ILR）"), "£1,800 – £2,000", f"{hof} £3,226"),
+        (L("Naturalisation as a British citizen", "入籍英國"), "£1,200", f"{hof} {L('£1,839 (incl. £130 ceremony)', '£1,839（包括 £130 入籍儀式費）')}"),
         (L("British National (Overseas) visa", "BN(O) 簽證"), "£1,200",
-         f"{hof} {L('£250 (5 years) / £180 (30 months)', '£250（5 年）／£180（30 個月）')}<br>{ihs}"),
-        (L("Visitor visa (6 months)", "訪客簽證（6 個月）"), "£1,000", f"{hof} £115"),
+         f"{hof} {L('£285 (5 years) / £206 (30 months)', '£285（5 年）／£206（30 個月）')}<br>{ihs}"),
+        (L("Visitor visa (6 months)", "訪客簽證（6 個月）"), "£1,000", f"{hof} £135"),
         (L("Immigration appeal (First-tier Tribunal)", "移民上訴（初級審裁處）"), "£2,500 – £3,500",
-         L("Court fee £140 (oral hearing)<br>Barrister’s fee for complex cases, plus VAT", "法院費用 £140（口頭聆訊）<br>複雜案件另加大律師費及增值稅")),
+         L("Tribunal fee £144 (with a hearing)<br>Barrister’s fee for complex cases, plus VAT", "審裁處費用 £144（設聆訊）<br>複雜案件另加大律師費及增值稅")),
         (L("Administrative review", "行政覆核"), "£600 – £800", f"{hof} £80"),
     ]
     imm_rows = "".join(f"<tr><td>{a}</td><td class=\"num\">{b}</td><td>{c}</td></tr>" for a, b, c in imm)
@@ -678,8 +678,8 @@ def fees():
           <thead><tr><th>{L("Matter", "事項")}</th><th>{L("Our fee (+ VAT)", "律師費（另加增值稅）")}</th><th>{L("Expected disbursements", "預計代支費用")}</th></tr></thead>
           <tbody>{imm_rows}</tbody>
         </table></div>
-        <p class="fee-note">{L("Home Office fees from 4 October 2023; Immigration Health Surcharge from 6 February 2024. These are not subject to VAT. Applications submitted from outside the UK may cost more because of exchange rates and card surcharges. Other possible costs: bank transfer £5–£15 + VAT, courier about £50 + VAT, postage at Post Office rates.",
-                               "內政部申請費以 2023 年 10 月 4 日為準；移民健康附加費以 2024 年 2 月 6 日為準，兩者均不設增值稅。在英國境外提交的申請，可能因匯率及信用卡附加費而費用較高。其他可能費用：銀行轉帳 £5–£15（另加增值稅）、速遞約 £50（另加增值稅）、郵費按郵局收費。")}</p>
+        <p class="fee-note">{L("Home Office, tribunal and Immigration Health Surcharge amounts as listed on GOV.UK in October 2026; they change from time to time. They are not subject to VAT. Applications submitted from outside the UK may cost more because of exchange rates and card surcharges. Other possible costs: bank transfer £5–£15 + VAT, courier about £50 + VAT, postage at Post Office rates.",
+                               "內政部申請費、審裁處費用及移民健康附加費以 2026 年 10 月 GOV.UK 所列為準，日後或會調整，均不設增值稅。在英國境外提交的申請，可能因匯率及信用卡附加費而費用較高。其他可能費用：銀行轉帳 £5–£15（另加增值稅）、速遞約 £50（另加增值稅）、郵費按郵局收費。")}</p>
       </section>
 
       <section class="fee-sec" id="debt">

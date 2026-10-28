@@ -674,7 +674,7 @@ def fees():
         <h2>{L("Immigration", "移民")}</h2>
         <p>{L("Work is carried out by a Partner or our Immigration Consultant, who has handled immigration matters since 2021 and has been a registered barrister in Hong Kong since 2012. We handle the application from start to finish: forms and covering letter, biometric appointment, paying UKVI and IHS fees, document checklists and review, uploading the bundle and chasing UKVI for updates.",
               "由合夥人或本行移民顧問處理。該顧問自 2021 年起處理移民事務，並自 2012 年起為香港註冊大律師。我們由頭到尾處理申請：填寫表格及附信、預約生物特徵登記、代繳 UKVI 及 IHS 費用、整理及審閱文件清單、上載申請文件，以及向 UKVI 跟進進度。")}</p>
-        <div class="table-wrap"><table class="fee-table">
+        <div class="table-wrap"><table class="fee-table wide">
           <thead><tr><th>{L("Matter", "事項")}</th><th>{L("Our fee (+ VAT)", "律師費（另加增值稅）")}</th><th>{L("Expected disbursements", "預計代支費用")}</th></tr></thead>
           <tbody>{imm_rows}</tbody>
         </table></div>

@@ -6,6 +6,15 @@
 > 每頁頂端有「Concept」標示列，所有頁面都設為 `noindex`，`robots.txt` 也禁止搜尋引擎收錄，避免和官方網站搶搜尋結果。
 > 如果律所正式採用：刪掉 `_build/build.py` 裡的 `.concept-bar` 和 `<meta name="robots" content="noindex, nofollow">`，重新建置，並把 `robots.txt` 改回 `Allow: /`。
 
+## 語言
+
+| 路徑 | 版本 |
+|---|---|
+| `/` | English（預設，和原網站一致） |
+| `/zh/` | 繁體中文（香港用語） |
+
+原網站沒有中文版。選用繁體及香港用語，是因為律所處理 BN(O) 簽證，移民顧問亦是香港大律師，香港客戶是主要對象之一。律所沒有公開的中文名稱，所以品牌和律師姓名維持英文；政策 PDF 只有英文版，連結會註明「（英文）」。每頁右上角可切換語言，並停留在同一頁。
+
 ## 頁面
 
 | 頁面 | 內容 |
@@ -31,7 +40,7 @@
 
 ## 修改與建置
 
-所有頁面由 `_build/build.py` 產生，頁首、頁尾、導覽列和聯絡資料只需改一處：
+所有頁面由 `_build/build.py` 產生，頁首、頁尾、導覽列和聯絡資料只需改一處。文字寫成 `L(English, 繁體中文)`，新增或修改文字時兩種語言要一起改：
 
 ```
 python3 _build/build.py
@@ -49,8 +58,9 @@ python3 -m http.server 5180
 
 ```
 index.html, services.html, fees.html, team.html, contact.html
+zh/                 同上，繁體中文
 assets/css/style.css
-assets/js/main.js    手機選單、捲動效果、收費頁側欄定位、諮詢表單
+assets/js/main.js    手機選單、捲動效果、收費頁側欄定位、「就此查詢」預選事項、諮詢表單
 assets/img/favicon.svg
 _build/build.py      頁面產生器
 ```

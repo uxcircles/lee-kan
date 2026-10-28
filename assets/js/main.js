@@ -79,12 +79,13 @@
       e.preventDefault();
       if (!form.reportValidity()) return;
       var f = form.elements;
-      var subject = 'Website enquiry: ' + f.matter.value + ' (' + f.name.value + ')';
+      var matterText = f.matter.options[f.matter.selectedIndex].text;
+      var subject = 'Website enquiry: ' + matterText + ' (' + f.name.value + ')';
       var body = [
         'Name: ' + f.name.value,
         'Phone: ' + (f.phone.value || '-'),
         'Email: ' + f.email.value,
-        'Matter: ' + f.matter.value,
+        'Matter: ' + matterText,
         '',
         f.message.value
       ].join('\n');

@@ -9,13 +9,15 @@
 <meta property="og:description" content="Contact Lee & Kan Solicitors: 4th Floor, 36 Lexington Street, London W1F 0LJ. Telephone 020 7287 8888.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0b2f35">
+<link rel="alternate" hreflang="en-GB" href="contact.html">
+<link rel="alternate" hreflang="zh-Hant" href="zh/contact.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="lang-en">
 <a class="skip" href="#main">Skip to content</a>
 <div class="concept-bar" role="note">
   <div class="container concept-inner">
@@ -36,7 +38,10 @@
         <a class="btn btn-primary" href="contact.html#enquiry">Get a quote</a>
       </div>
     </nav>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="header-tools">
+      <div class="lang-switch" aria-label="Language"><a href="contact.html" lang="en-GB" hreflang="en-GB" aria-current="true">EN</a><a href="zh/contact.html" lang="zh-Hant" hreflang="zh-Hant">繁中</a></div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="ic-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
   </div>
 </header>
 <main id="main">
@@ -95,7 +100,7 @@
         <div class="field"><label for="phone">Phone <span style="font-weight:400;color:var(--ink-mute)">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
       </div>
       <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-      <div class="field"><label for="matter">What is it about?</label><select id="matter" name="matter"><option>Residential Property</option><option>Commercial & Business Property</option><option>Company & Commercial</option><option>Immigration</option><option>Private Client</option><option>Litigation & Dispute Resolution</option><option>Something else</option></select></div>
+      <div class="field"><label for="matter">What is it about?</label><select id="matter" name="matter"><option value="residential">Residential Property</option><option value="commercial">Commercial &amp; Business Property</option><option value="company">Company &amp; Commercial</option><option value="immigration">Immigration</option><option value="private-client">Private Client</option><option value="litigation">Litigation &amp; Dispute Resolution</option><option value="other">Something else</option></select></div>
       <div class="field"><label for="message">Your message</label><textarea id="message" name="message" required placeholder="A few lines about your matter, and any deadlines."></textarea></div>
       <button class="btn btn-primary" type="submit">Write email <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <p class="form-note">Sending an enquiry doesn’t make you a client. We’ll confirm terms and costs in writing before any work begins. See our <a href="https://www.lee-kan.com/LKPrivacy.pdf" target="_blank" rel="noopener">privacy policy</a>.</p>

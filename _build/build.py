@@ -116,7 +116,7 @@ def layout(page, title, description, body):
 <div class="concept-bar" role="note">
   <div class="container concept-inner">
     <p><span class="concept-tag">Concept</span><span class="concept-long">{L(f'Concept redesign. Not the <a href="{OFFICIAL}" target="_blank" rel="noopener">official Lee &amp; Kan Solicitors website</a>.', f'改版概念設計，並非 <a href="{OFFICIAL}" target="_blank" rel="noopener">Lee &amp; Kan Solicitors 官方網站</a>。')}</span></p>
-    <a href="https://ux-circles.com/web" target="_blank" rel="noopener"><span class="concept-by">{L("Designed by ", "設計：")}</span><strong>UX CIRCLES</strong> {icon("ext", "ic-ext")}</a>
+    <a href="https://ux-circles.com/professionals" target="_blank" rel="noopener"><span class="concept-by">{L("Designed by ", "設計：")}</span><strong>UX CIRCLES</strong> {icon("ext", "ic-ext")}</a>
   </div>
 </div>
 <header class="site-header">
@@ -173,7 +173,7 @@ def layout(page, title, description, body):
       <div>
         <p>{L(f"Lee &amp; Kan Solicitors is authorised and regulated by the Solicitors Regulation Authority, SRA No. {SRA_NO}.",
               f"Lee &amp; Kan Solicitors 由英格蘭及威爾斯律師監管局（SRA）授權及監管，SRA 編號 {SRA_NO}。")}</p>
-        <p>&copy; Lee &amp; Kan Solicitors. {L("Concept redesign by", "改版概念設計：")} <a href="https://ux-circles.com/web" target="_blank" rel="noopener">UX CIRCLES</a>.</p>
+        <p>&copy; Lee &amp; Kan Solicitors. {L("Concept redesign by", "改版概念設計：")} <a href="https://ux-circles.com/professionals" target="_blank" rel="noopener">UX CIRCLES</a>.</p>
       </div>
       <div class="sra-badge"><div><div><iframe frameborder="0" scrolling="no" allowTransparency="true" src="https://cdn.yoshki.com/iframe/55847r.html" title="{L("SRA digital badge", "SRA 數字徽章")}"></iframe></div></div></div>
     </div>

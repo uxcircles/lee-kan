@@ -2,7 +2,7 @@
 
 [Lee & Kan Solicitors](https://www.lee-kan.com/) 的網站改版：位於倫敦 Soho Lexington Street 的律師事務所，業務包括住宅及商業物業、公司商業、移民、遺囑遺產（Private Client）及訴訟。純靜態 HTML / CSS / JS，任何靜態主機都能直接部署。
 
-> **概念設計展示**：這是由 [UX CIRCLES](https://ux-circles.com/web) 設計的改版提案，並非 Lee & Kan Solicitors 官方網站。
+> **概念設計展示**：這是由 [UX CIRCLES](https://ux-circles.com/professionals) 設計的改版提案，並非 Lee & Kan Solicitors 官方網站。
 > 每頁頂端有「Concept」標示列，所有頁面都設為 `noindex`，`robots.txt` 也禁止搜尋引擎收錄，避免和官方網站搶搜尋結果。
 > 如果律所正式採用：刪掉 `_build/build.py` 裡的 `.concept-bar` 和 `<meta name="robots" content="noindex, nofollow">`，重新建置，並把 `robots.txt` 改回 `Allow: /`。
 
